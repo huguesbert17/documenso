@@ -17,7 +17,7 @@ export const verifyTwoFactorAuthenticationToken = async ({
   user,
   totpCode,
 }: VerifyTwoFactorAuthenticationTokenOptions) => {
-  const key = DOCUMENSO_ENCRYPTION_KEY;
+  const key = ENCRYPTION_KEY;
 
   if (!user.twoFactorSecret) {
     throw new Error('user missing 2fa secret');
