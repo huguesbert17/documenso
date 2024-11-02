@@ -1,1 +1,1 @@
-# @documenso/web
+# @iSign/web
