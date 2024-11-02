@@ -3,7 +3,7 @@ import { TOTPController } from 'oslo/otp';
 
 import type { User } from '@documenso/prisma/client';
 
-import { DOCUMENSO_ENCRYPTION_KEY } from '../../constants/crypto';
+import { ENCRYPTION_KEY } from '../../constants/crypto';
 import { symmetricDecrypt } from '../../universal/crypto';
 
 const totp = new TOTPController();
